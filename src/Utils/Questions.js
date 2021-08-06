@@ -48,7 +48,7 @@ export const Questions = [
       answer: "C"
       }, 
             { 
-      prompt: "Although MIT's campus is in Cambridge, many fraternities and sororities have houses across the Massachusetts Avenue bridge in Boston. What neighborhood of Boston is this?",
+      prompt: "What neighborhood of Boston are many fraternities and sororities located in?",
       optionA: "North End",
       optionB: "Beacon Hill",
       optionC: "Back Bay",

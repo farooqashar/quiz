@@ -6,7 +6,7 @@ const Menu = () => {
     const { game, setGame } = useContext(GameContext);
 
     return (
-        <div>
+        <div className="menu">
             <button onClick={() => setGame("Quiz")}>
                 Start Quiz
             </button>

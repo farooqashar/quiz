@@ -21,7 +21,7 @@ const Menu = () => {
           <input
             rows="1"
             cols="47"
-            class="form-control"
+            className="form-control"
             onChange={(event) => setUserName(event.target.value)}
             type="text"
             placeholder="Enter Your Name Here"

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GameContext } from "../Utils/Context.js";
 
 const Menu = () => {
+
+    const { game, setGame } = useContext(GameContext);
+
     return (
         <div>
-            Msdss
+            <button onClick={() => setGame("Quiz")}>
+                Start Quiz
+            </button>
         </div>
     )
 };

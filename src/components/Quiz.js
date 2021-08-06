@@ -6,7 +6,7 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [chosenChoice, setChosenChoice] = useState("");
 
-  const { setGame, setScore, score } = useContext(GameContext);
+  const { setGame, setScore, score, name } = useContext(GameContext);
 
   const handleNextQuestion = () => {
       if (Questions[currentQuestion].answer === chosenChoice) {
@@ -24,6 +24,8 @@ const Quiz = () => {
 
 
   return (
+    <>
+    <h1> Hi {name} </h1>
     <div className="quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
 
@@ -71,8 +73,8 @@ const Quiz = () => {
       </button>
        }
 
-
     </div>
+    </>
   );
 };
 

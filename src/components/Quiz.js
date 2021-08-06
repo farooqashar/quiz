@@ -6,7 +6,7 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [chosenChoice, setChosenChoice] = useState("");
 
-  const { setScore, score } = useContext(GameContext);
+  const { setGame, setScore, score } = useContext(GameContext);
 
   const handleNextQuestion = () => {
       if (Questions[currentQuestion].answer === chosenChoice) {
@@ -16,9 +16,12 @@ const Quiz = () => {
   };
 
   const handleFinishQuiz = () => {
-
+      if (Questions[currentQuestion].answer === chosenChoice) {
+            setScore(score + 1);
+      } 
+     setGame("Terminate");
   };
-  
+
 
   return (
     <div className="quiz">

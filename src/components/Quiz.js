@@ -12,9 +12,13 @@ const Quiz = () => {
       if (Questions[currentQuestion].answer === chosenChoice) {
             setScore(score + 1);
       } 
-      alert(score);
     setCurrentQuestion(currentQuestion + 1);
   };
+
+  const handleFinishQuiz = () => {
+
+  };
+  
 
   return (
     <div className="quiz">
@@ -46,10 +50,17 @@ const Quiz = () => {
           {Questions[currentQuestion].optionD}
         </button>
       </div>
-
-      <button onClick={handleNextQuestion} className="btn btn-primary">
+    
+       {currentQuestion === Questions.length - 1 ? 
+      <button onClick={handleFinishQuiz} className="btn btn-danger">
+        Finish Quiz
+      </button> : 
+       <button onClick={handleNextQuestion} className="btn btn-primary">
         Next Question
       </button>
+       }
+
+
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Terminate = () => {
         <div className="terminate">
             <h1> Quiz Completed!</h1>
             <h3>{score} / {Questions.length}</h3>
-            <button onClick={reset}className="btn btn-primary"></button>
+            <button onClick={reset}className="btn btn-primary">Reset</button>
         </div>
     )
 };

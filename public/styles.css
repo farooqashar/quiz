@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.menu, .quiz{
+.menu, .quiz, .terminate{
     width: 510px;
     height: 510px;
     border-radius: 10px;
@@ -20,10 +20,6 @@
 
 .questions {
 width: 100%;
-}
-
-.terminate {
-
 }
 
 @keyframes mainTitle {

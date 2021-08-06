@@ -17,6 +17,14 @@
     align-items: center;
 }
 
+.quiz {
+  
+}
+
+.options {
+
+}
+
 @keyframes mainTitle {
     from {
       color: red;

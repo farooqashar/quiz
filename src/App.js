@@ -8,11 +8,12 @@ import {GameContext} from "./Utils/Context.js";
 function App() {
 
   const [game, setGame] = useState("Menu");
+  const [score, setScore] = useState(0);
 
   return (
     <div className="App">
         <h1>Quiz App</h1>
-        <GameContext.Provider value={{game, setGame}}>
+        <GameContext.Provider value={{game, setGame,score,setScore}}>
         {game === "Menu" && <Menu />}
         {game === "Quiz" && <Quiz />}
         {game === "Terminate" && <Terminate />}

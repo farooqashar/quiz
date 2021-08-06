@@ -7,7 +7,7 @@ const Menu = () => {
 
     return (
         <div className="menu">
-            <button onClick={() => setGame("Quiz")}>
+            <button className="btn btn-primary" onClick={() => setGame("Quiz")}>
                 Start Quiz
             </button>
         </div>

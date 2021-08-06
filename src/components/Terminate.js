@@ -15,7 +15,7 @@ const Terminate = () => {
         <div className="terminate">
             <h3 className="subttt"> Quiz Completed! </h3>
             <i><h3 className="eachl"> {name}, awesome job taking on the challenge!</h3></i>
-            <h3>Your Score: <strong className="quick">{score} / {Questions.length}</strong></h3>
+            <h3>Your Score: <strong className="eachl">{score} / {Questions.length}</strong></h3>
             <button onClick={reset}className="btn btn-danger">Try Again</button>
 
             <br />

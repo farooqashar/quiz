@@ -1,26 +1,58 @@
 export const Questions = [
       { 
-      prompt: "What does MIT stand for?",
-      optionA: "12323",
-      optionB: "2ewdw",
-      optionC: "3dwwdw",
-      optionD: "4dww",
+      prompt: "When did MIT first admit students?",
+      optionA: "1912",
+      optionB: "1865",
+      optionC: "1636",
+      optionD: "1750",
+      answer: "B"
+      },
+      { 
+      prompt: "Who was the first president of MIT?",
+      optionA: "Rafael Reif",
+      optionB: "Susan Hockfield",
+      optionC: "William Barton Rogers",
+      optionD: "Karl Taylor Compton",
+      answer: "C"
+      },
+     { 
+      prompt: "What is the long hallway connecting many of the buildings of the main campus called?",
+      optionA: "The Long Walk",
+      optionB: "Hell Way",
+      optionC: "Tech Trek",
+      optionD: "The Infinite Corridor",
+      answer: "D"
+      },
+      { 
+      prompt: "What animal is the mascot of MIT?",
+      optionA: "Beaver",
+      optionB: "Tiger",
+      optionC: "Elephant",
+      optionD: "Turtle",
       answer: "A"
       },
       { 
-      prompt: "What does MIT not stand for?",
-      optionA: "1dwwe",
-      optionB: "2dwdw",
-      optionC: "3dwewe",
-      optionD: "4dwwedw",
+      prompt: "What are the school's athletic teams called?",
+      optionA: "Spartans",
+      optionB: "Engineers",
+      optionC: "Techies",
+      optionD: "Nerds",
       answer: "B"
       },
-     { 
-      prompt: "What is the current month?",
-      optionA: "1dwew",
-      optionB: "2dwewew",
-      optionC: "3dwww",
-      optionD: "4dwwe",
-      answer: "D"
+      { 
+      prompt: "Which of these is NOT an athletic facility at MIT?",
+      optionA: "Zesiger Center",
+      optionB: "Jack Barry Field",
+      optionC: "Maseeh",
+      optionD: "Wang Fitness Center",
+      answer: "C"
+      }, 
+            { 
+      prompt: "Although MIT's campus is in Cambridge, many fraternities and sororities have houses across the Massachusetts Avenue bridge in Boston. What neighborhood of Boston is this?",
+      optionA: "North End",
+      optionB: "Beacon Hill",
+      optionC: "Back Bay",
+      optionD: "Chinatown",
+      answer: "C"
       }
 ];

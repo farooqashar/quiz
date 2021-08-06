@@ -13,14 +13,14 @@ const Terminate = () => {
 
     return (
         <div className="terminate">
-            <h1> Quiz Completed! </h1>
-            <h3> {name}, awesome job taking on the challenge!</h3>
-            <h3>{score} / {Questions.length}</h3>
-            <button onClick={reset}className="btn btn-primary">Reset</button>
+            <h3 className="subttt"> Quiz Completed! </h3>
+            <i><h3 className="eachl"> {name}, awesome job taking on the challenge!</h3></i>
+            <h3>Your Score: <strong className="quick">{score} / {Questions.length}</strong></h3>
+            <button onClick={reset}className="btn btn-danger">Try Again</button>
 
-
-             <a href="mailto:someone@yoursite.com" className="btn btn-primary">
-                Share This Quiz
+            <br />
+             <a href="mailto:yourfriend@example.com" className="btn btn-secondary">
+                Share This Quiz 😃
             </a>
         </div>
     )

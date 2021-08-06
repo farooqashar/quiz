@@ -4,7 +4,7 @@ import { GameContext } from "../Utils/Context.js";
 const Menu = () => {
   const { setGame, name, setName } = useContext(GameContext);
 
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState(name);
 
   useEffect(() => {
     setName(userName);
@@ -15,8 +15,14 @@ const Menu = () => {
       <h1>Hi {name} </h1>
       <div className="menu">
         <div className="form-group">
-          <label htmlFor="name" className="form-label"></label>
+          <label htmlFor="name" className="form-label">
+            Enter Your Name:
+          </label>
           <input
+            rows="1"
+            cols="47"
+            required
+            class="form-control"
             onChange={(event) => setUserName(event.target.value)}
             type="text"
             placeholder="Enter Your Name"

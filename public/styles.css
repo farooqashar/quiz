@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.menu {
+.menu, .quiz{
     width: 510px;
     height: 510px;
     border-radius: 10px;
@@ -17,11 +17,12 @@
     align-items: center;
 }
 
-.quiz {
-  
+
+.questions {
+width: 100%;
 }
 
-.options {
+.terminate {
 
 }
 

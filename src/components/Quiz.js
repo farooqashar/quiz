@@ -27,33 +27,41 @@ const Quiz = () => {
     <div className="quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
 
-      <div className="options">
+      <div>
         <button
           onClick={() => setChosenChoice("A")}
-          className="btn btn-secondary"
+          className="btn btn-secondary questions"
         >
           {Questions[currentQuestion].optionA}
         </button>
+        <br/>
+        <br/>
         <button
           onClick={() => setChosenChoice("B")}
-          className="btn btn-secondary"
+          className="btn btn-secondary questions"
         >
           {Questions[currentQuestion].optionB}
         </button>
+        <br/>
+        <br/>
         <button
           onClick={() => setChosenChoice("C")}
-          className="btn btn-secondary"
+          className="btn btn-secondary questions"
         >
           {Questions[currentQuestion].optionC}
         </button>
+        <br/>
+        <br/>
         <button
           onClick={() => setChosenChoice("D")}
-          className="btn btn-secondary"
+          className="btn btn-secondary questions"
         >
           {Questions[currentQuestion].optionD}
         </button>
       </div>
-    
+        <br/>
+        <br/>
+        <br/>
        {currentQuestion === Questions.length - 1 ? 
       <button onClick={handleFinishQuiz} className="btn btn-danger">
         Finish Quiz

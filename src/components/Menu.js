@@ -3,7 +3,7 @@ import { GameContext } from "../Utils/Context.js";
 
 const Menu = () => {
 
-    const { game, setGame } = useContext(GameContext);
+    const {setGame } = useContext(GameContext);
 
     return (
         <div className="menu">

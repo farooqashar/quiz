@@ -12,20 +12,19 @@ const Menu = () => {
 
   return (
     <>
-      <h1>Hi {name} </h1>
+      <h3 className="subttt">Hi {name}!</h3>
       <div className="menu">
         <div className="form-group">
           <label htmlFor="name" className="form-label">
-            Enter Your Name:
+            <strong>Enter Your Name:</strong>
           </label>
           <input
             rows="1"
             cols="47"
-            required
             class="form-control"
             onChange={(event) => setUserName(event.target.value)}
             type="text"
-            placeholder="Enter Your Name"
+            placeholder="Enter Your Name Here"
           ></input>
         </div>
         <button className="btn btn-primary" onClick={() => setGame("Quiz")}>

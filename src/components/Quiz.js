@@ -25,7 +25,7 @@ const Quiz = () => {
 
   return (
     <>
-    <h1> Hi {name} </h1>
+    <h3 className="eachl">{name}, your current score is {score} / {Questions.length}. </h3>
     <div className="quiz">
       <h1>{Questions[currentQuestion].prompt}</h1>
 

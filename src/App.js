@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState } from "react";
 import Menu from "./components/Menu.js";
 import Quiz from "./components/Quiz.js";
 import Terminate from "./components/Terminate.js";

@@ -8,7 +8,7 @@ const Menu = () => {
 
   useEffect(() => {
     setName(userName);
-  }, [userName]);
+  }, [userName,setName]);
 
   return (
     <>
